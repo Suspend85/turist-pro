@@ -37,7 +37,6 @@ const params = Object.fromEntries(urlSearchParams.entries());
 const { region } = params;  // const region = params.region - тоже самое
 tbody.innerHTML = trips.filter(trip => trip.region === region).map(renderRow).join("");
 
-// console.log(region);
 
 tbody.addEventListener('click', event => {
     if (event.target.nodeName !== "BUTTON") {
@@ -46,10 +45,7 @@ tbody.addEventListener('click', event => {
     const id = +event.target.dataset.id
     const trip = trips.find(trip => trip.id === id)
     window.localStorage.setItem('chosenTrip', JSON.stringify(trip))
-    window.location.href = "seat.html"   // window.open('seat.html') - открыть в новом окне
-
-    // console.log(id);
-    // console.log(trip);
+    window.location.href = "/zones/"   // window.open('zones') - открыть в новом окне
     // console.log(event.target.type);
     // console.log(event.target.nodeName)
 })
