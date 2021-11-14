@@ -1,0 +1,36 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.feedback {
+  display: flex;
+  justify-content: center;
+  gap: 36px;
+}
+
+.feedback > div {
+  flex: 1;
+  text-align: left;
+  padding: 5px;
+  border: 1px solid black;
+}
+
+.feedback div.name {
+  text-align: right;
+}
+
+#search form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  gap: 8px;
+  align-content: center;
+  margin: 0 auto;
+}
+
+#promotions .promo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Турист-pro</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <img src="https://via.placeholder.com/150x50" alt="Лого" />
+        <h1><a href="index.html">Турист-pro</a></h1>
+      </div>
+      <nav>
+        <a href="#promotions">Акции</a>
+        <a href="#search">Поиск</a>
+        <a href="#booking">Бронирование</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section id="booking">
+        <h2>Бронирование</h2>
+      </section>
+
+      <section>
+        <h2>О компании</h2>
+        <div>Девиз компании</div>
+        <div>Цель компании</div>
+        <div class="feedback">
+          <div>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Laudantium pariatur provident ipsum ratione atque maiores.
+            </p>
+            <div class="name">Имя Фамилия</div>
+          </div>
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam
+              nemo sapiente labore veniam natus corrupti.
+            </p>
+            <div class="name">Имя Фамилия</div>
+          </div>
+          <div>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro
+              voluptates ipsam nesciunt quae aperiam soluta.
+            </p>
+            <div class="name">Имя Фамилия</div>
+          </div>
+        </div>
+      </section>
+      <section id="search">
+        <h2>Поиск</h2>
+        <form action="search.html" target="_blank">
+          <label for="search-form-region">Регион</label>
+          <select name="region" id="search-form-region">
+            <option value="Москва">Москва</option>
+            <option value="Санкт-Петербург">Санкт-Петербург</option>
+            <option value="Новосибирск">Новосибирск</option>
+          </select>
+          <label for="search-form-start">Начало</label>
+          <input type="date" name="start-date" id="search-form-start" />
+          <label for="search-form-end">Конец</label>
+          <input type="date" name="end-date" id="search-form-end" />
+
+          <label for="search-form-amount">Количество участников</label>
+          <input
+            type="number"
+            name="amount"
+            id="search-form-amount"
+            min="1"
+            max="10"
+          />
+          <div class="radiobox">
+            <label>
+              Уровень сложности
+              <input type="radio" name="level" value="1" checked />Легкий
+            </label>
+            <label>
+              <input type="radio" name="level" value="2" />Средний
+            </label>
+            <label>
+              <input type="radio" name="level" value="3" />Сложный
+            </label>
+          </div>
+
+          <button type="submit">Поиск</button>
+        </form>
+      </section>
+      <section id="promotions">
+        <h2>Акции</h2>
+        <div class="promo">
+          <div>
+            <img src="https://via.placeholder.com/200x300" alt="" />
+            <h3>Акция выходного дня</h3>
+            <p>Акция выходного дня. Акция выходного дня</p>
+            <a href="">Подробнее</a>
+          </div>
+          <div>
+            <img src="https://via.placeholder.com/200x300" alt="" />
+            <h3>Акция выходного дня</h3>
+            <p>Акция выходного дня. Акция выходного дня</p>
+            <a href="">Подробнее</a>
+          </div>
+          <div>
+            <img src="https://via.placeholder.com/200x300" alt="" />
+            <h3>Акция выходного дня</h3>
+            <p>Акция выходного дня. Акция выходного дня</p>
+            <a href="">Подробнее</a>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Подпишитесь на наши акции!</h2>
+        <form action="">
+          <label for="subscribe-form-email">Email: </label>
+          <input type="email" name="email" id="subscribe-form-email" /><button
+            type="submit"
+          >
+            Подписаться
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <a href="tel:+78005553310">8 (800) 555-33-10</a>
+      <h6>Дополнительные ссылки</h6>
+      <a href="http://xxxxxx-m1.wsr.ru/return">Возврат</a>
+      <a href="http://xxxxxx-m1.wsr.ru/feedback">Обратная связь</a>
+    </footer>
+  </body>
+</html>
